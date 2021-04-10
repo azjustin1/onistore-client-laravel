@@ -1,0 +1,33 @@
+.navigation {
+	position: relative;
+	margin: 30px auto;
+	border-radius: 25px;
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+	background: #e0e0e0;
+	cursor: pointer;
+	box-shadow: 5px 5px 10px #707070, -5px -5px 10px #ffffff;
+}
+
+.navigation:hover {
+	background: #d6d6d6;
+	box-shadow: inset 10px 5px 5px #707070, inset -10px -5px 5px #ffffff;
+}
+
+.navigation.active {
+	background: #d6d6d6;
+	box-shadow: inset 10px 5px 5px #707070, inset -10px -5px 5px #ffffff;
+}
+
+.navigation.rounded {
+	position: relative;
+	margin: 30px auto;
+	border-radius: 50px;
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+	background: #e0e0e0;
+	cursor: pointer;
+	box-shadow: 5px 5px 10px #707070, -5px -5px 10px #ffffff;
+}

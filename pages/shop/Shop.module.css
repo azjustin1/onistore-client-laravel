@@ -1,0 +1,5 @@
+.shop {
+	display: flex;
+	background-color: transparent;
+	min-height: 100vh;
+}

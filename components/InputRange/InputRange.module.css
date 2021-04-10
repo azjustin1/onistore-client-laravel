@@ -1,0 +1,46 @@
+.container {
+	display: flex;
+	height: 36px;
+	width: 75%;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 25px;
+	margin: 20px auto;
+	background: transparent;
+	text-align: center;
+}
+
+.container input[type="range"] {
+	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+	width: 100%; /* Specific width is required for Firefox. */
+	height: 36px;
+	background: transparent;
+	outline: none;
+}
+
+.container input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: none;
+	height: 100%;
+	width: 36px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: auto 0;
+	background: linear-gradient(145deg, #cbcbcb, #ababab);
+	box-shadow: 5px 5px 15px #707070, -5px -5px 15px #ffffff;
+}
+
+.container input[type="range"]::-webkit-slider-runnable-track {
+	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	background: #d6d6d6;
+	box-shadow: inset 10px 5px 5px #707070, inset -10px -5px 5px #ffffff;
+}
+
+.container__input {
+	width: 100%;
+	height: 100%;
+}

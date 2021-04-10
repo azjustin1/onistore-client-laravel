@@ -1,0 +1,51 @@
+.sidebar {
+	grid-area: sidebar;
+	position: fixed;
+	text-align: center;
+	width: 20vw;
+	min-height: 100vh;
+	padding: 10px;
+	text-align: center;
+	transition: all 0.25s;
+	background: #bebebe;
+	box-shadow: 20px 20px 60px #707070;
+}
+
+.sidebar.active > {
+	background-color: pink;
+}
+
+@media screen and (max-width: 766px) {
+	.sidebar {
+		width: 0;
+		box-shadow: none;
+	}
+	.sidebar > * {
+		visibility: hidden;
+	}
+	.sidebar.active {
+		width: 75vw;
+		visibility: visible;
+	}
+	.sidebar.active > * {
+		visibility: visible;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+	.sidebar {
+		position: fixed;
+		top: 0;
+		min-height: 100vh;
+	}
+
+	.sidebar__account {
+		width: max-content;
+		height: max-content;
+		position: absolute;
+		top: 88%;
+		font-weight: bold;
+		font-size: 14pt;
+		cursor: pointer;
+	}
+}

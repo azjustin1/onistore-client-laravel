@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+}
+
+.container__number {
+	margin: auto 12px;
+	font-weight: bold;
+	font-size: large;
+	background: transparent;
+	outline: none;
+}
+
+@media screen and (max-width: 767px) {
+	.container__number {
+		font-size: normal;
+	}
+}

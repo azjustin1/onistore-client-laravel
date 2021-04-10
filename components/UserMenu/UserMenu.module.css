@@ -1,0 +1,66 @@
+.userMenu {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: max-content;
+	height: max-content;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+/* .userMenu:not(.userMenu__menu):hover {
+		color: #707070;
+	} */
+
+.userMenu__menu {
+	display: none;
+	left: 30%;
+	bottom: -30px;
+	width: 200px;
+	border-radius: 5px;
+	height: max-content;
+	background: #e0e0e0;
+	cursor: pointer;
+	box-shadow: 5px 5px 10px #707070, -5px -5px 10px #ffffff;
+	z-index: 1;
+}
+
+.userMenu__menu.open {
+	display: block;
+}
+
+.userMenu__menu li {
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+}
+
+@media screen and (max-width: 766px) {
+	.userMenu {
+		width: max-content;
+		height: max-content;
+		position: absolute;
+		top: 80%;
+		font-weight: bold;
+		font-size: 14pt;
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+	.userMenu {
+		width: max-content;
+		height: max-content;
+		position: absolute;
+		top: 88%;
+		font-weight: bold;
+		font-size: 14pt;
+		cursor: pointer;
+	}
+}
